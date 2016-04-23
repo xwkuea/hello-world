@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/show_user"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top"
+            android:gravity="center_horizontal"
+            android:text="userName"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <GridView
+            android:id="@+id/myGrid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="20dip"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="20dip" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/main_setting_button"
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/buttonstyle"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/main_setting_button"
+            android:paddingLeft="20dip"
+            android:text="SSSSSSS"
+            android:textColor="#0066cc"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/main_share_button"
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/buttonstyle"
+            android:text="分享"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

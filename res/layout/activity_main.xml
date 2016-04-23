@@ -1,0 +1,126 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top"
+            android:gravity="center_horizontal"
+            android:padding="10dip"
+            android:text="@string/welcome"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="@string/info_name"
+            android:textColor="#0099ff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_style"
+            android:hint="@string/info_input_name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="@string/info_pass"
+            android:textColor="#0099ff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/input_pass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_style"
+            android:hint="@string/info_input_pass"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="15dip" >
+
+            <Button
+                android:id="@+id/Login_next"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:onClick="Login_view"
+                android:background="@drawable/buttonstyle"
+                android:text="@string/button_text"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/Login_cancel"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="60dip"
+                android:layout_toRightOf="@+id/Login_next"
+                android:background="@drawable/buttonstyle"
+                android:text="取消"
+                android:onClick="Login_cancel"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/remenber_pass"
+                style="@style/checkbox_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Login_next"
+                android:layout_marginTop="20dip"
+                android:text="@string/remenber_text"
+                android:textColor="#0099ff"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/auto_login"
+                style="@style/checkbox_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Login_cancel"
+                android:layout_marginLeft="60dip"
+                android:layout_marginTop="20dip"
+                android:layout_toRightOf="@+id/remenber_pass"
+                android:text="@string/auto_text"
+                android:textColor="#0099ff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Login_reg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center_horizontal"
+            android:text="@string/reg_text"
+            android:onClick="Login_text"
+            android:textColor="#0099ff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>
